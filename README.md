@@ -2,9 +2,11 @@
 
 ## 👋 Personal Introduction  
 
-**By [Names: UWASE ANITHA                  ]** 
+**By UWASE ANITHA** 
 **ID: **
-*Role: Data Analyst | Student At AUCA | Introduction to Big Data Analysis*  
+**Role: Data Analyst | Student At AUCA | Introduction to Big Data Analysis**
+**My Kaggle Notebook: https://www.kaggle.com/code/uwaseanitha/introduction-to-big-data-analytic-kaggle**
+
 
 ## 📌 Introduction
 
@@ -46,7 +48,7 @@ Build an interactive Power BI dashboard for stakeholder use
 
 ## 🔍 Project Breakdown  
 
-### 1. Data Preparation  
+### 1. Data cleaning Preparation  
  
 **Code Highlight**:  
 
@@ -122,7 +124,7 @@ print(df[['fare_amount', 'hour', 'weekday', 'is_peak', 'distance_km']].head())
 
 🔗 Links & Resources
 
-Dataset Source: Uber Fares Dataset (Kaggle)
+Dataset Source: [Uber Fares Dataset - (Kaggle)] (https://www.kaggle.com/datasets/yasserh/uber-fares-dataset)
 
 Power BI Documentation: Microsoft Learn
 
