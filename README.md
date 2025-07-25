@@ -3,8 +3,11 @@
 ## 👋 Personal Introduction  
 
 **By UWASE ANITHA** 
-**ID: 26945 **
+
+**ID: 26945**
+
 **Role: Data Analyst | Student At AUCA | Introduction to Big Data Analysis**
+
 **My Kaggle Notebook: https://www.kaggle.com/code/uwaseanitha/introduction-to-big-data-analytic-kaggle**
 
 
@@ -131,7 +134,8 @@ Power BI Documentation: Microsoft Learn
 ---
 
 📬 Contact & Connect
-Feel free to contact me  for more information or if any problem
+Feel free to contact me  for more information or if any problem.
+
 Email:uwaseanitha1010@gmail.com
 
 ---
