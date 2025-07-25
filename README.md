@@ -22,13 +22,13 @@ The analysis supports data-driven decision-making for Uber's pricing strategies,
 
 **Objective**:
 
-**Identify peak demand periods and seasonal trends**:
+Identify peak demand periods and seasonal trends
 
-**Analyze fare distribution and distance-fare relationships**:
+Analyze fare distribution and distance-fare relationships
 
-**Discover geographic hotspots for ride requests**
+Discover geographic hotspots for ride requests
 
-**Build an interactive Power BI dashboard for stakeholder use**
+Build an interactive Power BI dashboard for stakeholder use
 
 **Key Features**:  
 
@@ -52,37 +52,73 @@ The analysis supports data-driven decision-making for Uber's pricing strategies,
 
 ```python
 
+# Check for missing values
+print(df.isnull().sum())
 
+# Drop rows with missing key values
+df.dropna(subset=['pickup_datetime', 'pickup_latitude', 'pickup_longitude',
+                  'dropoff_latitude', 'dropoff_longitude', 'fare_amount'], inplace=True)
+
+# Remove rows with invalid fare amounts
+df = df[(df['fare_amount'] > 0) & (df['fare_amount'] < 1000)]
+
+# Filter latitude and longitude (NYC bounds as rough check)
+df = df[(df['pickup_latitude'].between(40, 42)) & 
+        (df['pickup_longitude'].between(-75, -72)) &
+        (df['dropoff_latitude'].between(40, 42)) &
+        (df['dropoff_longitude'].between(-75, -72))]
+
+print("Shape after cleaning:", df.shape)
 ```
 
 **Screenshots**:  
 
 ---
+
+<img width="869" height="392" alt="shape after cleaning" src="https://github.com/user-attachments/assets/5116a105-352d-4a92-98e0-082120ef2762" />
 
 ### 2. Exploratory Analysis
 
 **Code Highlight**:  
 
 ```python
+from geopy.distance import geodesic
 
+# Convert pickup_datetime to datetime
+df['pickup_datetime'] = pd.to_datetime(df['pickup_datetime'])
+
+# Extract temporal features
+df['hour'] = df['pickup_datetime'].dt.hour
+df['day'] = df['pickup_datetime'].dt.day
+df['month'] = df['pickup_datetime'].dt.month
+df['weekday'] = df['pickup_datetime'].dt.day_name()
+df['year'] = df['pickup_datetime'].dt.year
+
+# Peak hours (7-9 AM or 5-7 PM)
+df['is_peak'] = df['hour'].apply(lambda x: 1 if 7 <= x <= 9 or 17 <= x <= 19 else 0)
+
+# Calculate distance (in km)
+def calculate_distance(row):
+    pickup = (row['pickup_latitude'], row['pickup_longitude'])
+    dropoff = (row['dropoff_latitude'], row['dropoff_longitude'])
+    return geodesic(pickup, dropoff).km
+
+df['distance_km'] = df.apply(calculate_distance, axis=1)
+
+print(df[['fare_amount', 'hour', 'weekday', 'is_peak', 'distance_km']].head())
 
 ```
 
 **Screenshots**:  
 
 
----
+<img width="931" height="415" alt="distance calculations" src="https://github.com/user-attachments/assets/87020d56-c4d9-480b-a5a6-cc96f1b1c12e" />
 
-3. Power BI Dashboard
+**3. Power BI Dashboard**
+ 
+**Screenshots**
 
-**Code Highlight**:  
-
-```python
-
-
-```
-
-**Screenshots**:  
+<img width="939" height="461" alt="power BI" src="https://github.com/user-attachments/assets/96ed1a81-8b95-436f-80ce-3bd2eab5231e" />
 
 🔗 Links & Resources
 
