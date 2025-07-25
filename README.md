@@ -2,13 +2,14 @@
 
 ## 👋 Personal Introduction  
 
-**By [Names:                   ]** 
+**By [Names: UWASE ANITHA                  ]** 
 **ID: **
 *Role: Data Analyst | Student At AUCA | Introduction to Big Data Analysis*  
 
 ## 📌 Introduction
 
-This project analyzes Uber trip data to uncover fare patterns, demand trends, and operational efficiencies. 
+This project analyzes Uber trip data to uncover actionable insights about fare patterns, demand fluctuations,and operational efficiency. 
+The analysis supports data-driven decision-making for Uber's pricing strategies, driver allocation, and service optimization.
 
 **Motivation**:  
 - Explore real-world big data applications  
@@ -19,7 +20,15 @@ This project analyzes Uber trip data to uncover fare patterns, demand trends, an
 
 ## 📌 Project Overview  
 
-**Objective**: Analyze Uber fares to identify pricing trends, peak demand periods, and geographic hotspots.  
+**Objective**:
+
+**Identify peak demand periods and seasonal trends**:
+
+**Analyze fare distribution and distance-fare relationships**:
+
+**Discover geographic hotspots for ride requests**
+
+**Build an interactive Power BI dashboard for stakeholder use**
 
 **Key Features**:  
 
