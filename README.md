@@ -1,53 +1,95 @@
-# Uber_fares_dataset_analysis_project
-NAMES: UWASE ANITHA 
-ID: 26945
+# 🚖 Uber Fares Dataset Analysis  
 
-Course: INSY 8413 - Introduction to Big Data Analytics
-Instructor: Eric Maniraguha
-Group: [E]
+## 👋 Personal Introduction  
 
-### 📌 OvervieW
-This project analyzes Uber trip data to uncover actionable insights about fare patterns, demand fluctuations, and operational efficiency. The analysis supports data-driven decision-making for Uber's pricing strategies, driver allocation, and service optimization
+**By [Names:                   ]** 
+**ID: **
+*Role: Data Analyst | Student At AUCA | Introduction to Big Data Analysis*  
 
-### Objectives
-Identify peak demand periods and seasonal trends
+## 📌 Introduction
 
-Analyze fare distribution and distance-fare relationships
+This project analyzes Uber trip data to uncover fare patterns, demand trends, and operational efficiencies. 
 
-Discover geographic hotspots for ride requests
+**Motivation**:  
+- Explore real-world big data applications  
+- Master Power BI for interactive dashboards  
+- Solve business problems through data-driven decisions  
 
-Build an interactive Power BI dashboard for stakeholder use
+---
 
-### Key Deliverables
-Component	Description	Tools Used
-Cleaned Dataset	Processed CSV with enhanced features	Python (Pandas)
-EDA Notebook	KAGGLE Notebook with full analysis	Python (Matplotlib/Seaborn)
-Power BI Dashboard	Interactive visualizations with filters	Power BI Desktop
+## 📌 Project Overview  
 
-### Methodology
-Data Collection: Original dataset sourced from Kaggle
+**Objective**: Analyze Uber fares to identify pricing trends, peak demand periods, and geographic hotspots.  
 
-Data Processing:
+**Key Features**:  
 
-Handling missing values and outliers
+✔️ **Data Cleaning**: Handled missing values and outliers  
+✔️ **Feature Engineering**: Extracted time-based features (hour/day/peak)  
+✔️ **Interactive Dashboard**: Single-page Power BI report with cross-filtering  
+✔️ **Business Insights**: Recommendations for dynamic pricing and driver allocation  
 
-Feature engineering (time extraction, peak/off-peak flags)
+**Tools Used**:  
+- **Python** (Pandas, Matplotlib) for EDA  
+- **Power BI** for visualization  
+- **GitHub** for version control 
 
-Analysis:
+---
 
-Statistical EDA (central tendencies, correlations)
+## 🔍 Project Breakdown  
 
-Temporal and spatial pattern detection
+### 1. Data Preparation  
+ 
+**Code Highlight**:  
 
-Visualization:
-
-Power BI dashboard with 5+ linked visualizations
-
-
+```python
 
 
+```
+
+**Screenshots**:  
+
+---
+
+### 2. Exploratory Analysis
+
+**Code Highlight**:  
+
+```python
 
 
+```
+
+**Screenshots**:  
 
 
+---
 
+3. Power BI Dashboard
+
+**Code Highlight**:  
+
+```python
+
+
+```
+
+**Screenshots**:  
+
+🔗 Links & Resources
+
+Dataset Source: Uber Fares Dataset (Kaggle)
+
+Power BI Documentation: Microsoft Learn
+
+---
+
+📬 Contact & Connect
+Feel free to contact me  for more information or if any problem
+Email:
+
+---
+
+🎨License: MIT
+Last Updated: July 2025
+
+---
